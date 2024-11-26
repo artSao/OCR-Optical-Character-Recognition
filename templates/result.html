@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasil OCR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Hasil OCR</h1>
-    <pre>{{ text }}</pre>
-    <a href="/">Kembali</a>
+    <div class="container">
+        <h1>Hasil OCR dari Gambar Anda</h1>
+        <div class="result-container">
+            <h2>Hasil Teks</h2>
+            <p>{{ text }}</p>
+        </div>
+        <!-- Tombol Kembali ke Halaman Utama -->
+        <a href="{{ url_for('index') }}" class="back-button">Kembali ke Halaman Utama</a>
+    </div>
 </body>
 </html>

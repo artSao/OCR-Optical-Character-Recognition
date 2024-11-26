@@ -1,0 +1,119 @@
+/* Reset default margin, padding, dan border pada semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Membuat background dan mengatur font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;  /* Warna latar belakang lembut */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Mengatur container untuk form upload */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading utama */
+h1 {
+    text-align: center;
+    color: #0056b3;  /* Warna biru */
+}
+
+/* Styling untuk form upload */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling input file */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Tombol upload */
+button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #003f7f;
+}
+
+/* Bagian hasil teks dari OCR */
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.result-container p {
+    white-space: pre-wrap;  /* Agar teks hasil OCR terformat dengan baik */
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol kembali */
+.back-button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+/* Styling untuk error atau informasi lainnya */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
